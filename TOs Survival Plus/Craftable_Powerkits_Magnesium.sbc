@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<BlueprintClassEntries>
+		<Entry Class="BasicTools" BlueprintSubtypeId="Powerkits" /> <!-- Survival Kit -->
+		<Entry Class="Tools" BlueprintSubtypeId="Powerkits" />
+		<Entry Class="EliteTools" BlueprintSubtypeId="Powerkits" />
+		<Entry Class="Consumables" BlueprintSubtypeId="Powerkits" />
+	</BlueprintClassEntries>
+
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Powerkits</SubtypeId>
+			</Id>
+			<DisplayName>Powerkit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Powerkit.dds</Icon>
+			<Prerequisites>
+				<Item Amount="10" TypeId="Ingot" SubtypeId="Silicon"/>
+				<Item Amount="40" TypeId="Ingot" SubtypeId="Iron"/>
+				<Item Amount="1" TypeId="Ingot" SubtypeId="Magnesium"/>
+			</Prerequisites>
+			<Result Amount="1" TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Powerkit"/>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+		</Blueprint>
+	</Blueprints>
+</Definitions>
