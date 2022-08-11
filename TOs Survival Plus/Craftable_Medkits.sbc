@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+	<BlueprintClassEntries>
+		<Entry Class="BasicTools" BlueprintSubtypeId="Medkits" /> <!-- Survival Kit -->
+		<Entry Class="Tools" BlueprintSubtypeId="Medkits" />
+		<Entry Class="EliteTools" BlueprintSubtypeId="Medkits" />
+		<Entry Class="Consumables" BlueprintSubtypeId="Medkits" />
+	</BlueprintClassEntries>
+
+	<Blueprints>
+		<Blueprint>
+			<Id>
+				<TypeId>BlueprintDefinition</TypeId>
+				<SubtypeId>Medkits</SubtypeId>
+			</Id>
+			<DisplayName>Medkit</DisplayName>
+			<Icon>Textures\GUI\Icons\Items\Medkit.dds</Icon>
+			<Prerequisites>
+				<Item Amount="10" TypeId="Ingot" SubtypeId="Iron"/>
+				<Item Amount="40" TypeId="Ingot" SubtypeId="Silicon"/>
+				<Item Amount="1" TypeId="Ingot" SubtypeId="Silver"/>
+			</Prerequisites>
+			<Result Amount="1" TypeId="MyObjectBuilder_ConsumableItem" SubtypeId="Medkit"/>
+			<BaseProductionTimeInSeconds>20</BaseProductionTimeInSeconds>
+		</Blueprint>
+	</Blueprints>
+</Definitions>
